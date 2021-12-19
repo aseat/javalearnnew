@@ -15,6 +15,7 @@ public class Matango extends Character {
 		}else{
 			System.out.println(this.name+"‚Íí“¬•s”\‚É‚È‚Á‚½");
 			System.out.println(enemy.name+"‚ÌŸ‚¿");
+			System.out.println(this.name+"‚Ì•‰‚¯");
 		}
 	}
 }
