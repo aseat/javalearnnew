@@ -25,14 +25,17 @@ public class ArrayListBasicPractice {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String input = bufferedReader.readLine();
         // ここからコーディングしてください
-        int num = 0;
-        for (String numbers : number) {
-            if (input.equals(numbers)) {
-                System.out.println(input + "は数値の" + num + "です");
-            } else if (num == 10 ){
-                System.out.println(input + "は英単語として存在しません");
+        boolean equal = false;
+        for (int i = 0; i < number.size(); i++) {
+            if (number.get(i).equals(input)) {
+                System.out.println(input + "は数値の" + i + "です");
+                equal = true;
+                break;
             }
-            num++;
+
+        }
+        if (equal==false) {
+            System.out.println(input + "は英単語として存在しません");
         }
     }
 }
